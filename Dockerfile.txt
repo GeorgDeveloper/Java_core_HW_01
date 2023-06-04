@@ -1,0 +1,5 @@
+FROM adoptopenjdk/openjdk11:ubi
+WORKDIR src/
+COPY . /src
+RUN javac -sourcepath ./src -d out src/ru/gdeveloper/startpgogram/Main.java
+CMD ["java","--class-path","./out","ru.gdeveloper.startpgogram.Main"]

@@ -1,0 +1,5 @@
+javac -sourcepath ./src -d out src/ru/gdeveloper/startpgogram/Main.java
+
+java -classpath ./out ru.gdeveloper.startpgogram.Main 
+
+
